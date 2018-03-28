@@ -1,0 +1,32 @@
+.back_img{
+		
+		background-repeat: no-repeat;
+		height: 900px;
+		background-color: #ffffff;
+}
+
+body {
+   background-image: url(img/hospital.jpg);
+
+}
+
+.area_log{
+	height: 300px
+}
+.area_reg{
+	height: 300px	
+}
+
+.pensamiento{
+  font-style:italic;
+  font-weight:bold;
+  font-size:1em;  
+  font-family:'Helvetica','Verdana','Monaco',sans-serif;
+}
+
+hr{ 
+   background-color:#ff0000; 
+ }
+.membrete {
+margin: -5px;
+}
