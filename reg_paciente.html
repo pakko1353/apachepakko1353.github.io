@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Registro de pacientes</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+
+
+    <link rel="stylesheet" type="text/css" href="css/CSS.css">      
+</head>
+<body>
+
+  <nav>
+    <div class="nav-wrapper blue darken-1">
+      <a href="#" class="brand-logo">UCI</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">Sass</a></li>
+        <li><a href="badges.html">Components</a></li>
+        <li><a href="collapsible.html">JavaScript</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="secction_formulario">
+
+  <div class="row">
+    <div class="col m12 s12 center">
+      <h2 class="hide-on-small-only">REGISTRO DE PACIENTES</h2>
+      <h3 class="hide-on-med-and-up">REG. PACIENTES</h3>
+    </div>
+  </div>
+  <div class="row container z-depth-3">
+    <div class="col s12">
+
+      <form class="col s12">
+        <span class="grey-text"><strong>DATOS PERSONALES:</strong></span>
+        <div class="row">
+
+          <div class="input-field col m4 s6">
+            <input id="nombre" type="text" class="validate">
+            <label for="nombre">Nombre</label>
+          </div>
+
+          <div class="input-field col m4 s6">
+            <input id=apellido" type="text" class="validate">
+            <label for="apellido">Apellido</label>
+          </div>
+
+          <div class="input-field col m4 s6">
+            <input id="cedula" type="text" class="validate">
+            <label for="cedula">Cedula de identidad</label>
+          </div>  
+
+          <div class="input-field col m3 s6">
+            <select>
+              <option class="" value="" disabled selected>Estado civil</option>
+              <option value="casado(a)">Casado(a)</option>
+              <option value="Soltero(a)">Soltero(a)</option>
+              <option value="Divorsiado(a)">Divorsiado(a)</option>
+              <option value="Viudo(a)">Viudo(a)</option>
+            </select>
+          </div>
+
+          <div class="input-field col m5 s6">
+            <input id="l_nacimiento" type="text" class="validate">
+            <label for="l_nacimiento">Lugar de Nacimiento</label>
+          </div>
+
+          <div class="input-field col m4 s6">
+            <input id="ocupacion" type="text" class="validate">
+            <label for="ocupacion">Ocupación</label>
+          </div>
+        </div>
+        <div class="row">
+          <div class="input-field col m3 s6">
+            <input id="telefono" type="text" class="validate">
+            <label for="telefono">Telefono</label>
+          </div>          
+
+          <div class="input-field col m9">
+            <input id="direccion" type="text" class="validate">
+            <label for="direccion">Dirección de habitación</label>
+          </div>
+            
+        </div>
+
+        <span class="grey-text"><strong>INFORMACIÓN DE INGRESO:</strong></span>        
+
+        <div class="row">
+
+            <div class="input-field col m4">
+                <input id="historia" type="text" class="validate">
+                <label for="historia">Número de historia</label>
+            </div>            
+
+            <div class="input-field col m2">
+                <input id="peso" type="text" class="validate">
+                <label for="peso">Peso</label>
+            </div>                        
+
+            <div class="input-field col m2">
+                <input id="estatura" type="text" class="validate">
+                <label for="estatura">Estatura</label>
+            </div>
+
+            <div class="input-field col m4">
+                <input id="responsable" type="text" class="validate">
+                <label for="responsable">Familiar encargado</label>
+            </div>
+
+            <div class="col s12 m4">
+                <input id="f_ingreso" placeholder="fecha de ingreso" type="text" class="datepicker">
+                <label for="diagnostico">Fecha de ingreso a UCI</label>
+            </div>            
+
+            <div class="input-field col m8">
+                <input id="diagnostico" type="text" class="validate">
+                <label for="diagnostico">Diagnostico</label>
+            </div>                        
+
+        </div>
+
+        <div class="row">
+
+          <div class="input-field col m6">
+            <input id="examen" type="text" class="validate">
+            <label for="examen">Examen</label>
+          </div>
+
+          <div class="input-field col m6">
+            <input id="tratamiento" type="text" class="validate">
+            <label for="tratamiento">Tratamiento</label>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="input-field col m12 right-align">
+            <a href="#" class="btn blue">Registrar</a>
+          </div>
+        </div>
+      </form>
+     
+    </div>
+  </div>
+
+    </div>    
+  </div>    
+  </section>
+
+  
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+
+  <script>
+    //traduccion de datapiker
+      $(document).ready(function(){
+        $('select').formSelect();
+        $('.datepicker').datepicker();
+      });
+
+  </script>
+</body>
+</html>
