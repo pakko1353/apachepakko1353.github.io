@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Listado de pacientes</title>
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/CSS.css">      
+</head>
+<body>
+
+  <!-- Dropdown Structure -->
+  <ul id="pacientes" class="dropdown-content">
+    <li><a href="list_pac.html" class="blue-text">Listar</a></li>
+    <li><a href="reg_paciente.html" class="blue-text">Registrar</a></li>
+  </ul>
+
+  <ul id="personals" class="dropdown-content">
+    <li><a href="list_pers.html" class="blue-text">Listar</a></li>
+    <li><a href="register.html" class="blue-text">Registrar</a></li>
+  </ul>
+
+  <nav>
+    <div class="nav-wrapper blue darken-1">
+      <a href="index.html" class="brand-logo">UCI</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="#!">Administración</a></li>
+        <li><a class="dropdown-trigger" href="#!" data-target="personals">Personal<i class="material-icons right">arrow_drop_down</i></a></li>
+        <!-- Dropdown Trigger -->
+        <li><a class="dropdown-trigger" href="#!" data-target="pacientes">Paciente<i class="material-icons right">arrow_drop_down</i></a></li>
+      </ul>
+    </div>
+  </nav>   
+    
+    <div class="container">
+        <div class="row">
+            <div class="col s2 center">
+
+            </div>          
+            <div class="col s8 center">
+                <h2>Lista de pacientes</h2>
+            </div>
+            <div class="col s2 center">
+                <a href="reg_paciente.html" class="btn blue">Nuevo</a>
+            </div>          
+        </div>
+      <table class="highlight responsive-table"">
+        <thead>
+          <tr>
+              <th>Paciente</th>
+              <th>Nº historial</th>
+              <th>Ingreso</th>
+              <th>Apache</th>
+              <th>Estadia (Dias)</th>
+          </tr>
+        </thead>
+
+        <tbody>
+          <tr>
+            <td>José Paredes</td>
+            <td>lj8l867</td>
+            <td>20-03-2018</td>
+            <td>1.5</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>José Paredes</td>
+            <td>lj8l867</td>
+            <td>20-03-2018</td>
+            <td>1.5</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>José Paredes</td>
+            <td>lj8l867</td>
+            <td>20-03-2018</td>
+            <td>1.5</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>José Paredes</td>
+            <td>lj8l867</td>
+            <td>20-03-2018</td>
+            <td>1.5</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>José Paredes</td>
+            <td>lj8l867</td>
+            <td>20-03-2018</td>
+            <td>1.5</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <td>José Paredes</td>
+            <td>lj8l867</td>
+            <td>20-03-2018</td>
+            <td>1.5</td>
+            <td>10</td>
+          </tr>          
+        </tbody>
+      </table>
+
+    </div>
+
+    <div class="row center">
+        <div class="col s12">
+          <ul class="pagination">
+            <li class="disabled"><a href="#!"><i class="material-icons">chevron_left</i></a></li>
+            <li class="active"><a href="#!">1</a></li>
+            <li class="waves-effect"><a href="#!">2</a></li>
+            <li class="waves-effect"><a href="#!">3</a></li>
+            <li class="waves-effect"><a href="#!">4</a></li>
+            <li class="waves-effect"><a href="#!">5</a></li>
+            <li class="waves-effect"><a href="#!"><i class="material-icons">chevron_right</i></a></li>
+          </ul>         
+        </div>
+    </div>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> 
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script> 
+</body>
+</html>
